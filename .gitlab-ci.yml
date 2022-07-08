@@ -11,4 +11,4 @@ pages:
       - public
   only:
     # choose your preferred source branch
-    - develop 
+    - main 
