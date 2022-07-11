@@ -2,26 +2,23 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
     </style>
   </head>
   <body style="background-color: #1565c0">
-    <script type = "text/javascript">  
-      function msgprint() {  
-         alert("You are Successfully Called the JavaScript function");  
-      }  
-    </script>  
-    <script type="text/javascript" src="./lib/microapp.js"></script>
+    <script type="text/javascript" src="./debug/js/microapp.js"></script> 
     <!-- <script>
-      // sayHello();
       getMsisdn();
-    </script> -->
-    <img src="logo.png" style="width: 72px" />
-    <h1>Hello !!!!!</h1>
-    <input type = "button" onclick = "msgprint()" value = "Message Print">  
+    </script>  -->
+    <img src="./logo.png" style="width: 72px" />
+    <h1>Hello with MSISDN</h1>
+    <div>
+      <input type="button" value="Get MSISDN" onClick="getMsisdn()" />
+      MSISDN: <span type="text" id="msisdnText"></span>
+  </div>  
   </body>
 </html>
