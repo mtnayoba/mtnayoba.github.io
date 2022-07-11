@@ -8,7 +8,7 @@
 // // This is the magic line that pushes error event to the magic console
 // window.onerror = function (msg, url, line, col, error) { console.log(msg, url, line, col, error); };
 // console.log("Starting...");
-// var Ayoba = getAyoba();
+var Ayoba = getAyoba();
 // // Let's wait for the page to load before doing anything
 // window.onload = function afterpagedLoad() {
 //     context = getURLParameter("context");
