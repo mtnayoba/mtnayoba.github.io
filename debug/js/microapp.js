@@ -161,11 +161,7 @@ function getCountry() {
 
 let clicks = 0;
 
-function addClick() {
-    clicks = clicks + 1;
-    document.querySelector('.total-clicks').textContent
-                = clicks;
-}
+
 
 // function clickButton() {
 //     // document.querySelector('#btn1').click();
@@ -177,11 +173,22 @@ function getMsisdn() {
     var msisdn = Ayoba.getMsisdn();
     // document.write(msisdn)
     console.log('msisdn: ', msisdn);
-    document.getElementById("msisdnText").textContent = msisdn
+    // document.getElementById("msisdnText").textContent = msisdn
 
     addClick();
 
     return msisdn
+}
+
+function addClick() {
+    clicks = clicks + 1;
+    console.log('clicks: ', clicks);
+    document.querySelector('.total-clicks').textContent
+                = clicks;
+
+    const msisdn = getMsisdn();
+
+    document.getElementById("msisdnText").textContent = msisdn
 }
 
 function getSelfJid() {
