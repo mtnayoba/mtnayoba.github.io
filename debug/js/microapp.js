@@ -169,17 +169,6 @@ let clicks = 0;
 //     console.log('click')
 // }
 
-function getMsisdn() {
-    var msisdn = Ayoba.getMsisdn();
-    // document.write(msisdn)
-    console.log('msisdn: ', msisdn);
-    // document.getElementById("msisdnText").textContent = msisdn
-
-    // addClick();
-
-    return msisdn
-}
-
 function addClick() {
     clicks = clicks + 1;
     console.log('clicks: ', clicks);
@@ -190,6 +179,19 @@ function addClick() {
 
     document.getElementById("msisdnText").textContent = msisdn
 }
+
+function getMsisdn() {
+    var msisdn = Ayoba.getMsisdn();
+    // document.write(msisdn)
+    console.log('msisdn: ', msisdn);
+    document.getElementById("msisdnText").textContent = msisdn
+
+    addClick();
+
+    return msisdn
+}
+
+
 
 function getSelfJid() {
     var jid = Ayoba.getSelfJid();
