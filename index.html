@@ -21,7 +21,7 @@
         times
       </p>
 
-      <!-- <input type="button" id="btn1" value="Get MSISDN" onClick="getMsisdn()" style="display: none" /> -->
+      <input type="button" id="btn1" value="Get MSISDN" onClick="getMsisdn()" />
       MSISDN: <span type="text" id="msisdnText"></span>
   </div>  
   <script type="text/javascript" src="./debug/js/microapp.js"></script> 
@@ -41,7 +41,8 @@
       function myFunction() {
         // const msisdn =  getMsisdn();
         // getTest()
-        getMsisdn();
+        document.querySelector('#btn1').click();
+        // getMsisdn();
         // alert(msisdn);
       }
       
