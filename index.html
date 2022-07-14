@@ -9,7 +9,7 @@
 			}
     </style>
   </head>
-  <body style="background-color: #1565c0">
+  <body style="background-color: #1565c0"  onload="myFunction()">
     
 
     <img src="./logo.png" style="width: 72px" />
@@ -21,7 +21,7 @@
         times
       </p>
 
-      <input type="button" id="btn1" value="Get MSISDN" onClick="getMsisdn()" style="display: none" />
+      <!-- <input type="button" id="btn1" value="Get MSISDN" onClick="getMsisdn()" style="display: none" /> -->
       MSISDN: <span type="text" id="msisdnText"></span>
   </div>  
   <script type="text/javascript" src="./debug/js/microapp.js"></script> 
@@ -33,6 +33,17 @@
       showTest();
     </script> -->
     <script type="text/javascript">
+
+      function getTest() {
+        return 'hello'
+      }
+
+      function myFunction() {
+        const msisdn =  getMsisdn();
+        // getTest()
+        // getMsisdn();
+        alert(msisdn);
+      }
       
       // let clicks = 0;
 
@@ -43,9 +54,9 @@
       // }
 
       // Simulate click function
-      function clickButton() {
-          document.querySelector('#btn1').click();
-      }
+      // function clickButton() {
+      //     document.querySelector('#btn1').click();
+      // }
 
       // function clickButton2() {
       //     console.log('Hello')
@@ -54,7 +65,7 @@
       // clickButton();
 
       // Simulate a click every second
-      setInterval(clickButton, 1000);
+      // setInterval(clickButton, 1000);
   </script>
   </body>
 </html>

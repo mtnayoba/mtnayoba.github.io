@@ -175,7 +175,7 @@ function getMsisdn() {
     console.log('msisdn: ', msisdn);
     // document.getElementById("msisdnText").textContent = msisdn
 
-    addClick();
+    // addClick();
 
     return msisdn
 }
