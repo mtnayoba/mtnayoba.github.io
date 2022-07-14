@@ -161,8 +161,8 @@ function getCountry() {
 
 function getMsisdn() {
     var msisdn = Ayoba.getMsisdn();
-    // document.write(msisdn)
-    document.getElementById("msisdnText").textContent = msisdn
+    document.write(msisdn)
+    // document.getElementById("msisdnText").textContent = msisdn
     return msisdn
 }
 
