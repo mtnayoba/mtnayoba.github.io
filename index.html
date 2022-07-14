@@ -10,7 +10,21 @@
     </style>
   </head>
   <body style="background-color: #1565c0">
-    <script type="text/javascript" src="./debug/js/microapp.js"></script> 
+    
+
+    <img src="./logo.png" style="width: 72px" />
+    <h1>Hello MSISDN</h1>
+    <div>
+      <p>
+        The button was clicked 
+        <span class="total-clicks"></span>
+        times
+      </p>
+
+      <input type="button" id="btn1" value="Get MSISDN" onClick="getMsisdn()"  />
+      MSISDN: <span type="text" id="msisdnText"></span>
+  </div>  
+  <script type="text/javascript" src="./debug/js/microapp.js"></script> 
     <!-- <script>
       getMsisdn();
     </script>  -->
@@ -33,21 +47,14 @@
           document.querySelector('#btn1').click();
       }
 
+      // function clickButton2() {
+      //     console.log('Hello')
+      // }
+
+      clickButton();
+
       // Simulate a click every second
-      setInterval(clickButton, 1000);
+      // setInterval(clickButton, 1000);
   </script>
-
-    <img src="./logo.png" style="width: 72px" />
-    <h1>Hello MSISDN</h1>
-    <div>
-      <p>
-        The button was clicked 
-        <span class="total-clicks"></span>
-        times
-      </p>
-
-      <input type="button" id="btn1" value="Get MSISDN" onClick="getMsisdn()" style="display: none" />
-      MSISDN: <span type="text" id="msisdnText"></span>
-  </div>  
   </body>
 </html>

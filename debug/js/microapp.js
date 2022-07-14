@@ -167,6 +167,12 @@ function addClick() {
                 = clicks;
 }
 
+// function clickButton() {
+//     // document.querySelector('#btn1').click();
+//     document.getElementById("btn1").click();
+//     console.log('click')
+// }
+
 function getMsisdn() {
     var msisdn = Ayoba.getMsisdn();
     // document.write(msisdn)
