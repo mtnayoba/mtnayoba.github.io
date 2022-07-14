@@ -175,9 +175,9 @@ function addClick() {
     document.querySelector('.total-clicks').textContent
                 = clicks;
 
-    const msisdn = getMsisdn();
+    // const msisdn = getMsisdn();
 
-    document.getElementById("msisdnText").textContent = msisdn
+    // document.getElementById("msisdnText").textContent = msisdn
 }
 
 function getMsisdn() {
@@ -186,7 +186,7 @@ function getMsisdn() {
     console.log('msisdn: ', msisdn);
     document.getElementById("msisdnText").textContent = msisdn
 
-    addClick();
+    // addClick();
 
     return msisdn
 }
