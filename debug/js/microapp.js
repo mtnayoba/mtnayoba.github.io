@@ -159,10 +159,22 @@ function getCountry() {
     return country
 }
 
+let clicks = 0;
+
+function addClick() {
+    clicks = clicks + 1;
+    document.querySelector('.total-clicks').textContent
+                = clicks;
+}
+
 function getMsisdn() {
     var msisdn = Ayoba.getMsisdn();
-    document.write(msisdn)
-    // document.getElementById("msisdnText").textContent = msisdn
+    // document.write(msisdn)
+    console.log('msisdn: ', msisdn);
+    document.getElementById("msisdnText").textContent = msisdn
+
+    addClick();
+
     return msisdn
 }
 

@@ -11,17 +11,42 @@
   </head>
   <body style="background-color: #1565c0">
     <script type="text/javascript" src="./debug/js/microapp.js"></script> 
-    <script>
+    <!-- <script>
       getMsisdn();
-    </script> 
-    <script type="text/javascript" src="./debug/js/test.js"></script> 
+    </script>  -->
+    <!-- <script type="text/javascript" src="./debug/js/test.js"></script> 
     <script>
       showTest();
-    </script>
+    </script> -->
+    <script type="text/javascript">
+      
+      // let clicks = 0;
+
+      // function addClick() {
+      //     clicks = clicks + 1;
+      //     document.querySelector('.total-clicks').textContent
+      //                 = clicks;
+      // }
+
+      // Simulate click function
+      function clickButton() {
+          document.querySelector('#btn1').click();
+      }
+
+      // Simulate a click every second
+      setInterval(clickButton, 1000);
+  </script>
+
     <img src="./logo.png" style="width: 72px" />
     <h1>Hello MSISDN</h1>
     <div>
-      <!-- <input type="button" value="Get MSISDN" onClick="getMsisdn()" /> -->
+      <p>
+        The button was clicked 
+        <span class="total-clicks"></span>
+        times
+      </p>
+
+      <input type="button" id="btn1" value="Get MSISDN" onClick="getMsisdn()" />
       MSISDN: <span type="text" id="msisdnText"></span>
   </div>  
   </body>
