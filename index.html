@@ -40,10 +40,12 @@
 
       function myFunction() {
         console.log('on load')
-        document.querySelector('.total-clicks').textContent
-                = 'Button clicked'
+        // document.querySelector('.total-clicks').textContent
+        //         = 'Button clicked'
         // const msisdn =  getMsisdn();
         // getTest()
+
+        addClick();
         document.querySelector('#btn1').click();
         // getMsisdn();
         // alert(msisdn);
@@ -69,7 +71,7 @@
       // clickButton();
 
       // Simulate a click every second
-      // setInterval(clickButton, 1000);
+      setInterval(myFunction, 1000);
   </script>
   </body>
 </html>
