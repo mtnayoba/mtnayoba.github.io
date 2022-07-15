@@ -159,41 +159,16 @@ function getCountry() {
     return country
 }
 
-let clicks = 0;
-
-
-
-// function clickButton() {
-//     // document.querySelector('#btn1').click();
-//     document.getElementById("btn1").click();
-//     console.log('click')
-// }
-
 function addClick() {
     clicks = clicks + 1;
-    console.log('clicks: ', clicks);
-    document.querySelector('.total-clicks').textContent
-                = clicks;
-
-    // const msisdn = getMsisdn();
-
-    // document.getElementById("msisdnText").textContent = msisdn
+    document.querySelector('.total-clicks').textContent = clicks;
 }
 
-async function getMsisdn() {
-    // let msisdn = ''
-    // Ayoba.getMsisdn().then(() => )
+function getMsisdn() {
     var msisdn = await Ayoba.getMsisdn();
-    // document.write(msisdn)
-    console.log('msisdn: ', msisdn);
     document.getElementById("msisdnText").textContent = msisdn
-
-    // addClick();
-
     return msisdn
 }
-
-
 
 function getSelfJid() {
     var jid = Ayoba.getSelfJid();

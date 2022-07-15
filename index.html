@@ -10,11 +10,7 @@
     </style>
   </head>
   <body style="background-color: #1565c0">
-  <!-- onload="myFunction()" -->
-    
-
-    <img src="./logo.png" style="width: 72px" />
-    <h1>Async & MSISDN</h1>
+    <h1>MSISDN Final</h1>
     <div>
       <p>
         The button was clicked 
@@ -26,59 +22,12 @@
       MSISDN: <span type="text" id="msisdnText"></span>
   </div>  
   <script type="text/javascript" src="./debug/js/microapp.js"></script> 
-    <!-- <script>
-      getMsisdn();
-    </script>  -->
-    <!-- <script type="text/javascript" src="./debug/js/test.js"></script>  -->
-    <!-- <script>
-      showTest();
-    </script> -->
     <script type="text/javascript">
-
-      // function getTest() {
-      //   return 'hello'
-      // }
-      // const msisdn =  getMsisdn();
-
-      function myFunction() {
-        console.log('on load')
-        // document.querySelector('.total-clicks').textContent
-        //         = 'Button clicked'
-        // const msisdn =  getMsisdn();
-        // getTest()
-
+      function onLoad() {
         addClick();
         document.querySelector('#btn1').click();
-        // getMsisdn();
-        // alert(msisdn);
       }
-
-      // addClick();
-      // document.querySelector('#btn1').click();
-      
-      // let clicks = 0;
-
-      // function addClick() {
-      //     clicks = clicks + 1;
-      //     document.querySelector('.total-clicks').textContent
-      //                 = clicks;
-      // }
-
-      // Simulate click function
-      // function clickButton() {
-      //     document.querySelector('#btn1').click();
-      // }
-
-      // function clickButton2() {
-      //     console.log('Hello')
-      // }
-
-      // clickButton();
-
-      // Simulate a click every second
-      // setTimeout(myFunction, 1000);
-      // myFunction();
-      setInterval(myFunction, 1000);
+      setTimeout(onLoad, 1000);
   </script>
   </body>
 </html>
