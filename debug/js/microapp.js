@@ -182,10 +182,11 @@ function addClick() {
 
 async function getMsisdn() {
     // let msisdn = ''
-    var msisdn = Ayoba.getMsisdn();
+    // Ayoba.getMsisdn().then(() => )
+    var msisdn = await Ayoba.getMsisdn();
     // document.write(msisdn)
     console.log('msisdn: ', msisdn);
-    document.getElementById("msisdnText").textContent = await msisdn
+    document.getElementById("msisdnText").textContent = msisdn
 
     // addClick();
 
