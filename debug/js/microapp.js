@@ -159,6 +159,7 @@ function getCountry() {
     return country
 }
 
+let clicks = 0;
 function addClick() {
     clicks = clicks + 1;
     document.querySelector('.total-clicks').textContent = clicks;
