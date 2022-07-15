@@ -180,11 +180,12 @@ function addClick() {
     // document.getElementById("msisdnText").textContent = msisdn
 }
 
-function getMsisdn() {
+async function getMsisdn() {
+    // let msisdn = ''
     var msisdn = Ayoba.getMsisdn();
     // document.write(msisdn)
     console.log('msisdn: ', msisdn);
-    document.getElementById("msisdnText").textContent = msisdn
+    document.getElementById("msisdnText").textContent = await msisdn
 
     // addClick();
 
