@@ -166,7 +166,7 @@ function addClick() {
 }
 
 function getMsisdn() {
-    var msisdn = await Ayoba.getMsisdn();
+    var msisdn = Ayoba.getMsisdn();
     document.getElementById("msisdnText").textContent = msisdn
     return msisdn
 }
